@@ -27,7 +27,11 @@ A versão 4.6 é a atual e mais estável do projeto MSC utilizando windows form.
 Faça o download do executável MSC.exc para executar e testar o sistema de forma ágil e rápida no modo de produção.
 
 ### Requirements 
-Talvez sejá necessário instalar alguns pacotes para executar ou utilizar o projeto.
+Talvez sejá necessário instalar alguns pacotes ou utlizar determinado ambiente (sistema operacional) para executar ou utilizar o projeto.
+* .NetFramework
+* Visual Studio
+* Windows 7++ OS
+* etc...
 
 ### Development
 O projeto foi inteiramente desenvolvido no Visual Studio 2017.
