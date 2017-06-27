@@ -1,0 +1,12 @@
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\HospitalLib.dll.config
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\HospitalLib.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\HospitalLib.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\EntityFramework.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\EntityFramework.xml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\obj\Release\HospitalLib.csprojResolveAssemblyReference.cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\obj\Release\HospitalLib.Migrations.Versao45.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\obj\Release\HospitalLib.csproj.GenerateResource.Cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\obj\Release\HospitalLib.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-windowsform\HospitalLib\obj\Release\HospitalLib.pdb
