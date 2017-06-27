@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66DADAD5-2DA7-44A2-9655-B860C62E24FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalWindowsForm</RootNamespace>
+    <AssemblyName>HospitalWindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="view_admin\agendamento\frmAgendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\agendamento\frmAgendamentos.Designer.cs">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\areaAtuacao\frmCadastrarAreaAtuacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\areaAtuacao\frmCadastrarAreaAtuacao.Designer.cs">
+      <DependentUpon>frmCadastrarAreaAtuacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\consulta\frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\consulta\frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\convenio\frmCadastrarConvenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\convenio\frmCadastrarConvenio.Designer.cs">
+      <DependentUpon>frmCadastrarConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\areaAtuacao\frmConsultarAreaAtuacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\areaAtuacao\frmConsultarAreaAtuacao.Designer.cs">
+      <DependentUpon>frmConsultarAreaAtuacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\banco\frmConsultarBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\banco\frmConsultarBanco.Designer.cs">
+      <DependentUpon>frmConsultarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\agendamento\frmAgendarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\agendamento\frmAgendarConsulta.Designer.cs">
+      <DependentUpon>frmAgendarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\admin\frmCadastrarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\admin\frmCadastrarAdmin.Designer.cs">
+      <DependentUpon>frmCadastrarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\banco\frmCadastrarBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\banco\frmCadastrarBanco.Designer.cs">
+      <DependentUpon>frmCadastrarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\medico\frmCadastrarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\medico\frmCadastrarMedico.Designer.cs">
+      <DependentUpon>frmCadastrarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\paciente\frmConsultarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\paciente\frmConsultarPaciente.Designer.cs">
+      <DependentUpon>frmConsultarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\admin\frmConsultarAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\admin\frmConsultarAdmin.Designer.cs">
+      <DependentUpon>frmConsultarAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\convenio\frmConsultarConvenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\convenio\frmConsultarConvenio.Designer.cs">
+      <DependentUpon>frmConsultarConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\medico\frmConsultarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\medico\frmConsultarMedico.Designer.cs">
+      <DependentUpon>frmConsultarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\paciente\frmCadastrarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\paciente\frmCadastrarPaciente.Designer.cs">
+      <DependentUpon>frmCadastrarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_admin\consulta\frmRealizarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_admin\consulta\frmRealizarConsulta.Designer.cs">
+      <DependentUpon>frmRealizarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_medico\frmAgendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_medico\frmAgendamentos.Designer.cs">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_medico\frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_medico\frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_medico\frmMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_medico\frmMedico.Designer.cs">
+      <DependentUpon>frmMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view_medico\frmMedicoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_medico\frmMedicoLogin.Designer.cs">
+      <DependentUpon>frmMedicoLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view_admin\admin\frmCadastrarAdmin.resx">
+      <DependentUpon>frmCadastrarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\agendamento\frmAgendamentos.resx">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\areaAtuacao\frmCadastrarAreaAtuacao.resx">
+      <DependentUpon>frmCadastrarAreaAtuacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\banco\frmCadastrarBanco.resx">
+      <DependentUpon>frmCadastrarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\agendamento\frmAgendarConsulta.resx">
+      <DependentUpon>frmAgendarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\consulta\frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\convenio\frmCadastrarConvenio.resx">
+      <DependentUpon>frmCadastrarConvenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\paciente\frmCadastrarPaciente.resx">
+      <DependentUpon>frmCadastrarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\paciente\frmConsultarPaciente.resx">
+      <DependentUpon>frmConsultarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\admin\frmConsultarAdmin.resx">
+      <DependentUpon>frmConsultarAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\areaAtuacao\frmConsultarAreaAtuacao.resx">
+      <DependentUpon>frmConsultarAreaAtuacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\banco\frmConsultarBanco.resx">
+      <DependentUpon>frmConsultarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\medico\frmCadastrarMedico.resx">
+      <DependentUpon>frmCadastrarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\convenio\frmConsultarConvenio.resx">
+      <DependentUpon>frmConsultarConvenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\medico\frmConsultarMedico.resx">
+      <DependentUpon>frmConsultarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_admin\consulta\frmRealizarConsulta.resx">
+      <DependentUpon>frmRealizarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_medico\frmAgendamentos.resx">
+      <DependentUpon>frmAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_medico\frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_medico\frmMedico.resx">
+      <DependentUpon>frmMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view_medico\frmMedicoLogin.resx">
+      <DependentUpon>frmMedicoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\HospitalLib.Controler.MedicoControler.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Agendamento.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.AreaAtuacao.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Banco.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Consulta.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Convenio.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Medico.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Paciente.datasource" />
+    <None Include="Properties\DataSources\HospitalModel.Secretaria.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalLib\HospitalLib.csproj">
+      <Project>{70f1b078-8846-4689-83f8-505b65a6b540}</Project>
+      <Name>HospitalLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
